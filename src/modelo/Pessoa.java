@@ -18,6 +18,7 @@ public abstract class Pessoa {
 		this.endereco = endereco;
 		this.idade = idade;
 	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -28,7 +29,6 @@ public abstract class Pessoa {
 	public String getCpf() {
 		return cpf;
 	}
-	
 	public Endereco getEndereco() {
 		return endereco;
 	}

@@ -1,16 +1,14 @@
 package modelo;
 
-public class Editora  {
+public class Editora{
 	
 	private String nome;
 	private Endereco endereco;
 	
-	
 	public Editora(String nome, Endereco endereco) {
 		super();
 		this.nome = nome;
-		this.endereco = endereco;
-		
+		this.endereco = endereco;	
 	}
 	
 	public Editora(String nome) {

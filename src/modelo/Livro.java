@@ -2,7 +2,6 @@ package modelo;
 
 public class Livro {
 
-   
     public int id;
     private String titulo;
     private String genero;
@@ -18,55 +17,34 @@ public class Livro {
 		this.editora = editora;
 	}
 
-
 	public Livro() {
 
-	
 	}
-
 
 	public int getId() {
 		return id;
 	}
-
-
-
 	public void setId(int id) {
 		this.id = id;
 	}
 
-
-
 	public String getTitulo() {
 		return titulo;
 	}
-
-
-
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
 
-
-
 	public String getGenero() {
 		return genero;
 	}
-
-
-
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
 
-
-
 	public Autor getAutor() {
 		return autor;
 	}
-
-
-
 	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
@@ -74,16 +52,12 @@ public class Livro {
 	public Editora getEditora() {
 		return editora;
 	}
-
-
 	public void setEditora(Editora editora) {
 		this.editora = editora;
 	}
 
-
 	public void remove(int i) {
-
-		
+	
 	}
    
 }
