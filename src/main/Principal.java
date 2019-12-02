@@ -13,17 +13,20 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Endereco endereco1 = new Endereco();
-		Autor autor = new Autor(1, " ", 35, endereco1);
-		Controlador controlador = new Controlador();
 		Editora editora;
+		Livro livro;
+
 		int idlivro = 0;
+		int opcao = 0;
+
 		String titulo = "";
 		String genero = "";
 		String nomeDoAutor = "";
 		String nomeDaEditora = "";
-		int opcao = 0;
-		Livro livro;
+
+		Endereco endereco1 = new Endereco();
+		Autor autor = new Autor(1, " ", 35, endereco1);
+		Controlador controlador = new Controlador();
 		entrada = new Scanner(System.in);
 
 		do {
@@ -100,20 +103,20 @@ public class Principal {
 			case 4:
 				System.out.println("--------------------------------------------------------");
 				System.out.println("$$$$$$$$$$$$$       EDIÇÃO DE LIVROS         $$$$$$$$$$$");
-				System.out.println("--------------------------------------------------------");
+				System.out.println("--------------------------------}
 
-				System.out.println("Digite o id do livro a ser editado:");
+				System.out.println("Digite o id do livro a ser edita}
 				idlivro = entrada.nextInt();
 
 				entrada.nextLine();
 
-				System.out.println("Digite o novo titulo do livr:");
+				System.out.println("Digite o novo titulo do livr:");}
 				titulo = entrada.nextLine();
 
-				System.out.println("Digite o novo genero do livro:");
+				System.out.println("Digite o novo genero do livro:")}
 				genero = entrada.nextLine();
 
-				System.out.println("Digite o novo autor do livro:");
+				System.out.println("Digite o novo autor do livro:");}
 				String Autor = entrada.nextLine();
 				
 				System.out.println("Digita a nova Editora do Livro:");
@@ -142,10 +145,12 @@ public class Principal {
 					if(confirmacao.toLowerCase().equals("s") || confirmacao.toLowerCase().equals("sim")) {
 						if(controlador.removeLivro(idlivro)) {
 							System.out.println(" foi removido com sucesso!");
-						} else {
+						} 
+						else {
 							System.err.println("ERRO: o livro não foi removido!");
 						}
-					} else {
+					} 
+						else {
 						System.err.println("Operação cancelada!");
 					}
 				}
@@ -154,7 +159,8 @@ public class Principal {
 				}
 				break;
 			}
-		}while(opcao!=6);
+		}
+		while(opcao!=6);
 	}
 }
 

@@ -13,15 +13,12 @@ public class Autor extends Pessoa{
 		super(nome);
 	}
 	
-
 	public int getId() {
 		return id;
 	}
 
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	
+ 
 }
